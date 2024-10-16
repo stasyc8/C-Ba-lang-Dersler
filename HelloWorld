@@ -1,0 +1,46 @@
+using System;
+
+
+
+#region Ders 1
+// Console.WriteLine("Merhaba Dünya");
+/*
+satırlar yukarıdan aşağıya okunur.
+her satır noktalı virgül ile bite.
+Console.WriteLine("Merhaba Dünya");
+*/
+#endregion
+
+
+#region Ders 2
+/* Console.Write("Benim Adım:");
+Console.WriteLine(" Yiğit");
+Console.ReadKey();
+Console.Write("Soyadım:");
+Console.WriteLine(" Çoban");
+*/
+#endregion
+
+#region Ders 3
+/*
+Console.Write("Adınız Ne ?");
+Console.ReadLine();
+Console.Write("Soyadınız Ne?");
+Console.ReadLine();
+Console.WriteLine("İyi Günler"); 
+*/
+#endregion
+
+
+#region Ders 3 Örnek UYG.
+/*
+Console.WriteLine("Kaç Yaşındasınız ?");
+Console.ReadLine();
+Console.Write("Mesliğiniz ?");
+Console.ReadLine();
+Console.WriteLine("Herhangi bir tuşa basarak uygulamayı tamamlayabilirsiniz");
+ */
+#endregion
+
+string name = "Yiğit";
+Console.WriteLine(name);
