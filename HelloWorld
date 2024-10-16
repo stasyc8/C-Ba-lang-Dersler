@@ -42,5 +42,47 @@ Console.WriteLine("Herhangi bir tuşa basarak uygulamayı tamamlayabilirsiniz");
  */
 #endregion
 
-string name = "Yiğit";
+#region Ders 4
+/*
+string name;
+name = "Yiğit";
 Console.WriteLine(name);
+*/
+#endregion
+
+#region Ders 5
+//String test = Console.ReadLine();
+//Console.Write(test);
+
+/*
+Kullanıcının ismi alınacak.
+Kullanıcının soy ismi alınacak.
+Ekranda hoş geldin isim soy isim yazacak.
+ */
+
+/*
+Console.WriteLine("İsminiz Nedir?");
+string name = Console.ReadLine();
+Console.WriteLine("Soyisminiz Nedir?");
+string surname = Console.ReadLine();
+Console.Write("Hoş geldin ");
+Console.Write(name);
+Console.Write(surname);
+*/
+#endregion
+
+#region Ders 5 UYG.
+/*
+Console.WriteLine("En Sevdiğin Meyve Hangisi?");
+string fruit = Console.ReadLine();
+Console.WriteLine("En Sevdiğin Tatlı Hangisi?");
+string dessert = Console.ReadLine();
+Console.Write("Dur Tahmöin Ediyorum. En Sevdiğin Tatlı:");
+Console.WriteLine(dessert);
+Console.Write("En Sevdiğin Meyve:");
+Console.Write(fruit);
+Console.Read();
+*/
+#endregion
+
+
