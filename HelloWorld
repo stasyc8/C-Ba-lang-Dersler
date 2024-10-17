@@ -1,7 +1,3 @@
-using System;
-
-
-
 #region Ders 1
 // Console.WriteLine("Merhaba Dünya");
 /*
@@ -84,5 +80,172 @@ Console.Write(fruit);
 Console.Read();
 */
 #endregion
+
+#region Ders 6
+
+/*
+ Değişken Tipleri
+
+    -Metinsel-
+        * string = ""
+        * char = ''
+    -Sayısal-
+        -Tam Sayılar-
+            * byte = 255
+            * short = 32767
+            * int = 2.1 milyar
+    -Ondalıklı Sayılar-
+       * float = 11.4F
+       * double = 13.7
+       * decimal = 15.8M
+    -Mantıksal-
+        * bool = true veya false
+ 
+
+
+char first = 'a';
+byte test = 254;
+short tes2 = 123;
+int number = 444;
+float test3 = 11.4F;
+double test4 = 11.4;
+decimal des = 15.8M;
+bool test5 = false; 
+*/
+#endregion
+
+#region Aritmetik Operatörler
+//Aritmetik Operatörler
+//       + - / * %
+
+//int number = 4 + 7;
+//Console.WriteLine(number);,
+
+// kısa ve uzun kenarı verilen bir dikdörtgenin alanını hesaplayıp ekranda gösteren uygulamayı yaz.
+
+
+//double kisa = 10;
+//double uzun = 50;
+// double sonuc = kisa * uzun;
+//Console.Write(kisa * uzun);
+
+//int number = 7 % 2;
+//Console.Write(number);
+
+//string name = "Yiğit";
+//string surname = "Çoban";
+//string fullName = name + " " +  surname;
+//Console.Write(fullName);
+
+//using System;
+
+//int number = 5;
+//// number = 5 * 2;
+//number *= 5;
+//// number += 7;
+//Console.Write(number);
+#endregion
+
+#region Ders 6-7 UYG.
+/*
+// Ödev kullanıcı bilgisi iste, soy ismini iste sonraki satıra isim ve soy isim yaz.
+
+using System;
+
+Console.WriteLine("İsminiz  nedir?");
+string name = Console.ReadLine();
+Console.WriteLine("Soy adınız nedir?");
+string surname = Console.ReadLine();
+Console.WriteLine("Numaranız Nedir?");
+string number = Console.ReadLine();
+Console.WriteLine(number);
+Console.WriteLine("Hoşgeldin " + number + surname);
+*/
+#endregion
+
+#region Mantıksal Operatörler
+
+// Mantıksal Operatörler
+// '==' '>' '<' '>=' '<='
+
+//using System;
+
+//Console.Write("5 ile 7 eşit mi?");
+//Console.WriteLine( 5==7);
+//Console.Write("4 büyük mü 8'den?");
+//Console.WriteLine(4>8);
+//Console.Write("9<=9");
+//Console.WriteLine( 9 <=9);
+
+// Soru: Metinsel bir soru tanımlayalım, consol ekranında bunu bilmeye çalışalım. Bilirsek true bilmezsek false yazalım.
+
+//using System;
+
+//string secretNumber = "18";
+//string number = Console.ReadLine();
+//Console.WriteLine(secretNumber == number);
+
+#endregion
+
+#region Artırma Azaltma
+//using System;
+
+//int number = 5;
+
+//Console.WriteLine(1 + number);
+//Console.WriteLine(++number);
+//Console.WriteLine(number--); // 6 
+//Console.WriteLine(number !=);
+#endregion
+
+
+#region Ve/Veya Operatörleri
+/*
+ 
+ve sembolü && x > 5 && x < 10 
+
+veya sembolü || x > 50 || x == 10
+ 
+ */
+
+// Örnek: Girilen sayı 50 ile 60 arasında olan 5 in katlarından biri veya 3 ün katlarından biri ise ekrana true yazdırın değilse false yazıdıran uygulamayı yazın.
+
+//using System;
+
+//int x = 55;
+
+//bool isTrue = ( x > 50 && x < 60 ) && ( x % 5 == 0 || x % 3 == 0 );
+
+//Console.Write(isTrue);
+
+#endregion
+
+
+#region Ve/Veya UYG.
+/*
+ Kullanıcı adı, email ve şifre değişkenlerimiz olacak. Bunlara başlangıçta değer atayın.
+Sonra kullanıcıdan isim isteyim. kullanıcı adı veya email yazabilir.
+İkiside ok.
+Sonra Şifre isteyin.
+Kullanıucı adı veya e mail adresi doğruysa ve şifre doğruysa ekranda true yazsın.
+ */
+
+//using System;
+
+//string userName = "yiğit";
+//string password = "12345";
+//string email = "yc84114@gmail.com";
+//Console.WriteLine("Kullanıcı Adı:");
+//string n1 = Console.ReadLine();
+//Console.WriteLine("Şifre:");
+//string n2 = Console.ReadLine();
+//bool isTrue = (userName ==n1 || email ==n1) && (password ==n2);
+//Console.Write(isTrue);
+
+#endregion
+
+
+
+
 
 
