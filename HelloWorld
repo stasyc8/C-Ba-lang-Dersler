@@ -1,3 +1,6 @@
+using System;
+
+
 #region Ders 1
 // Console.WriteLine("Merhaba Dünya");
 /*
@@ -100,7 +103,7 @@ Console.Read();
        * decimal = 15.8M
     -Mantıksal-
         * bool = true veya false
- 
+
 
 
 char first = 'a';
@@ -201,11 +204,11 @@ Console.WriteLine("Hoşgeldin " + number + surname);
 
 #region Ve/Veya Operatörleri
 /*
- 
+
 ve sembolü && x > 5 && x < 10 
 
 veya sembolü || x > 50 || x == 10
- 
+
  */
 
 // Örnek: Girilen sayı 50 ile 60 arasında olan 5 in katlarından biri veya 3 ün katlarından biri ise ekrana true yazdırın değilse false yazıdıran uygulamayı yazın.
@@ -239,10 +242,371 @@ Kullanıucı adı veya e mail adresi doğruysa ve şifre doğruysa ekranda true 
 //string n1 = Console.ReadLine();
 //Console.WriteLine("Şifre:");
 //string n2 = Console.ReadLine();
-//bool isTrue = (userName ==n1 || email ==n1) && (password ==n2);
+//bool isTrue = (userName == n1 || email == n1) && (password == n2);
 //Console.Write(isTrue);
 
 #endregion
+
+
+#region Tip Dönüşümleri
+//// Tip Dönüşümleri
+
+////int numberınt = 10;
+
+////string numberstring = numberınt.tostring();
+
+/////* int numberınt2 = int.parse(numberstring);*/ // #string yapma methodu
+////int numberınt2 = convert.toınt32(numberstring);
+////toınt16 = short
+//// toınt32 = int
+////toınt64 = float
+////double numberdouble = convert.todouble("15");
+////decimal numberdecimal = convert.todecimal("20");
+////console.write(numberınt2 * 2);
+
+////short numbershort = 15;
+////int numberınt3 = numbershort; 
+#endregion
+
+
+#region Tip Dönüşüm UYG.
+// Konsol üzerinden küçük kenarı ve büyük kenarı girilen bir dikdörtgenin çevresini hesaplayan uygulamayı yazınız.
+
+//Console.WriteLine("Küçük kenarı Giriniz:");
+//int kucukKenar = Convert.ToInt32(Console.ReadLine());
+//Console.WriteLine("Büyük Kenarı Giriniz:");
+//int buyukKenar = Convert.ToInt32(Console.ReadLine());
+//string cevre = ((kucukKenar + buyukKenar) *2 ).ToString();
+//Console.Write("Dikdörtgenin Çevresi = " + cevre); 
+#endregion
+
+
+#region Hata Yönetimi Dersi/ Matematiksel Tahmin oyunu
+//Console.WriteLine("Aklından Bir Sayı Tut ve Söyleme sonra enter tuşuna bas");
+//Console.ReadLine();
+//Console.WriteLine("Tuttuğun sayıyı 2 ile çarp ve enter tuşuna bas");
+//Console.ReadLine();
+//Console.WriteLine("Bulduğun sonucu belirlediğin ikinci bir sayı ile topla ve bu ikinci sayıyı ekrana yazdıktan sonra enter tuşuna bas");
+//double number = Convert.ToDouble(Console.ReadLine());
+//Console.WriteLine("Bulduğun sonucu ikiye böl sonra enter tuşuna bas");
+//Console.ReadLine();
+//Console.WriteLine("Bulduğun sonuçtan ilk tuttuğun sayıyı çıkar");
+//Console.ReadLine();
+//string tahmin = (number / 2).ToString();
+//Console.WriteLine("Galiba tahmin ediyorum. Bulduğun sayı = " + tahmin + " mi/mu?");
+//Console.ReadLine();
+#endregion
+
+#region Hata Yönetimi, TryCath
+//// Hata Yönetimi, TryCath 
+
+//// iki sayının çarpımını bulan uygulamayı yazınız.
+
+//try
+//{
+//    Console.WriteLine("1. sayıyı giriniz:");
+//    int number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("2. sayıyı giriniz:");
+//    int number2 = Convert.ToInt32(Console.ReadLine());
+//    int sonuc = number1 * number2;
+//    Console.Write("Sonuç: " + sonuc);
+
+//}
+//catch (FormatException)
+//{
+//    Console.WriteLine("hatalı giriş yaptınız lütfen bir sonraki denemede sayı formatını kullanın.");
+//}
+
+#endregion
+
+
+#region Hata Yönetimi, TryCatch Detayları
+// trycatch arasına bir şey koyamazsın
+//try
+//{
+//    Console.WriteLine("1. sayıyı giriniz:");
+//    int number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("2. sayıyı giriniz:");
+//    int number2 = Convert.ToInt32(Console.ReadLine());
+//    int sonuc = number1 * number2;
+//    Console.Write("Sonuç: " + sonuc);
+
+//}
+//catch (FormatException)
+//{
+//    Console.WriteLine("hatalı giriş yaptınız lütfen bir sonraki denemede sayı formatını kullanın.");
+//}
+//catch (DivideByZeroException) // Sıfıra Bölünememe Hatası
+//{
+
+//}
+//catch (Exception ex ) // Bütün Hataları Kapsar
+//{
+//    Console.WriteLine(ex.Message); // Kullanıcaya bir hata mesajı döner
+//} 
+#endregion
+
+
+#region Finally ve throw komutu
+// trycatch arasına bir şey koyamazsın
+//try
+//{
+//    Console.WriteLine("1. sayıyı giriniz:");
+//    int number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("2. sayıyı giriniz:");
+//    int number2 = Convert.ToInt32(Console.ReadLine());
+//    int sonuc = number1 * number2;
+//    Console.Write("Sonuç: " + sonuc);
+
+//}
+//catch (FormatException)
+//{
+//    Console.WriteLine("hatalı giriş yaptınız lütfen bir sonraki denemede sayı formatını kullanın.");
+//}
+//catch (DivideByZeroException) // Sıfıra Bölünememe Hatası
+//{
+
+//}
+//catch (Exception ex) // Bütün Hataları Kapsar
+//{
+//    Console.WriteLine(ex.Message); // Kullanıcaya bir hata mesajı döner
+//}
+//finally // TryCatch'in sonuna finally yazıp son durağı ekliyoruz.
+//{
+//    Console.WriteLine(" Burası Son Durak");
+//}
+
+////try // TryCatch açmanın kolay yolu try yazdıktan sonra iki kere tab tuşuna basmak
+////{
+
+////}
+////catch (Exception)
+////{
+
+////    throw; // Aldığın hataya seni geri atıyor
+////} 
+#endregion
+
+#region BreakPoint
+//// Breakpoint koyabilirsin istediğin yere satırların yanındaki programın yan bölümüne
+//// istediğin yere koyup F10 tuşu ile projeyi tek tek yavaş yavaş nasıl işlediğini görebilirsin
+
+
+//try
+//{
+//    Console.WriteLine("1. sayıyı giriniz:");
+//    int number1 = Convert.ToInt32(Console.ReadLine());
+//    Console.WriteLine("2. sayıyı giriniz:");
+//    int number2 = Convert.ToInt32(Console.ReadLine());
+//    int sonuc = number1 * number2;
+//    Console.Write("Sonuç: " + sonuc);
+
+//}
+//catch (FormatException)
+//{
+//    Console.WriteLine("hatalı giriş yaptınız lütfen bir sonraki denemede sayı formatını kullanın.");
+//}
+//catch (DivideByZeroException) // Sıfıra Bölünememe Hatası
+//{
+
+//}
+//catch (Exception ex) // Bütün Hataları Kapsar
+//{
+//    Console.WriteLine(ex.Message); // Kullanıcaya bir hata mesajı döner
+//}
+//finally // TryCatch'in sonuna finally yazıp son durağı ekliyoruz.
+//{
+//    Console.WriteLine(" Burası Son Durak");
+//}
+
+////try // TryCatch açmanın kolay yolu try yazdıktan sonra iki kere tab tuşuna basmak
+////{
+
+////}
+////catch (Exception)
+////{
+
+////    throw; // Aldığın hataya seni geri atıyor
+////}  
+#endregion
+
+#region İf else yapısı
+
+// Karar Mekanizmaları
+//internal class Program
+//{
+//    private static void Main(string[] args)
+//    {
+//        // x 
+//        Console.WriteLine("Bir sayı giriniz:");
+//        int number = Convert.ToInt32(Console.ReadLine());
+//        if (number > 10)
+//        {
+//            Console.WriteLine("Sayı 10'dan Büyüktür.");
+
+//        }
+//        else if (number < 10)
+//        {
+//            Console.WriteLine("Sayı 10'dan küçüktür.");
+//        }
+//        else
+//        {
+//            Console.WriteLine("Sayı 10'a eşittir.");
+//        }
+//        if (number %2 == 0 ) 
+//        {
+//            Console.WriteLine("2 ye tam bölünür.");
+//        }
+//        else
+//        {
+//                Console.WriteLine("2 ye tam bölünmez");
+//        }
+//    }
+//} 
+#endregion
+
+
+#region İf else Bilgi Yarışması UYG.
+//// ifelse bilgi yarışması
+
+///*
+// Soru 1) Kızınca tüküren hayvan hangisidir.
+//a) lama
+//b) deve
+//Soru 2) Dünyaya en yakın olan gezegen hangisidir.
+//a) venüs
+//b) mars
+//Soru 3)  5 * 2 + 8 / 2 - 2 işleminin sonucu kaçtır
+//a) 7
+//b) 12
+// */
+
+//// 2 veya daha fazla soruyu doğru bilirse kazanacak bilemezse kaybedecek
+
+
+//int numberOfCorrectAnswer = 0;
+
+//Console.WriteLine("Soru 1) Kızınca tüküren hayvan hangisidir.");
+//Console.WriteLine("a) lama");
+//Console.WriteLine("b) deve");
+//string answer = Console.ReadLine();
+//if (answer == "a")
+//{
+//    numberOfCorrectAnswer = 1;
+//}
+//Console.WriteLine("Soru 2) Dünyaya en yakın olan gezegen hangisidir.");
+//Console.WriteLine("a) venüs");
+//Console.WriteLine("b) mars");
+//answer = Console.ReadLine();
+//if (answer == "b")
+//{
+//    numberOfCorrectAnswer +=1;
+//}
+//Console.WriteLine("Soru 3)  5 * 2 + 8 / 2 - 2 işleminin sonucu kaçtır");
+//Console.WriteLine("a) 7");
+//Console.WriteLine("b) 12");
+//answer = Console.ReadLine();
+//if ( answer == "b")
+//{
+//numberOfCorrectAnswer +=1;
+//}
+//if ( numberOfCorrectAnswer <= 1)
+//{
+//    Console.WriteLine("Kaybettiniz.");
+//}
+//if (numberOfCorrectAnswer >= 2)
+//{
+//    Console.WriteLine("Büyük Ödülün Sahibi Oldunuz.");
+//}
+//else
+//{
+//    Console.WriteLine("Kaybettiniz.");
+//} 
+#endregion
+
+#region Switch Case
+// Karar Mekanizmaları ( Switch Case )
+
+// manav | Elma = 1, armut = 1, çilek = 2, muz =3 | 4
+
+
+// switch i hangi formatta yazarsan öyle olur ek olarak yazdığın verilerin birebir aynısı olması lazım büyük/küçük duyarlılığı var
+
+//Console.WriteLine("Hangi Meyveyi almak istiyorsunuz?");
+//string fruit = Console.ReadLine();
+//switch (fruit)
+//{
+//    case "elma":
+//    case "armut":
+//        Console.WriteLine("1 lira");
+//        break;
+//    case "çilek":
+//        Console.WriteLine("2 lira");
+//        break;
+//    case "muz":
+//        Console.WriteLine("3 lira");
+//        break;
+//        default:
+//        Console.WriteLine("4 lira");
+//        break;
+//} 
+#endregion
+
+
+#region Switch Case UYG.
+// manav | Elma = 1, armut = 1, çilek = 2, muz =3 | 4
+
+
+//try
+//{
+//    Console.WriteLine("Hangi Meyveyi almak istiyorsunuz?");
+//    string fruit = Console.ReadLine();
+//    Console.WriteLine("Kaç adert istersiniz.");
+//    int number = Convert.ToInt32(Console.ReadLine());
+//    int totalPrice = 0;
+//    switch (fruit)
+//    {
+//        case "elma":
+//        case "armut":
+//            // Console.WriteLine("1 lira");
+//            totalPrice = number * 1;
+//            break;
+//        case "çilek":
+//            // Console.WriteLine("2 lira");
+//            totalPrice = number * 2;
+//            break;
+//        case "muz":
+//            // Console.WriteLine("3 lira");
+//            totalPrice = number * 3;
+//            break;
+//        default:
+//            // Console.WriteLine("4 lira");
+//            totalPrice = number * 4;
+//            break;
+//    }
+//    if (number >= 3)
+//    {
+//        Console.WriteLine(totalPrice);
+//    }
+//    else 
+//    {
+//        Console.WriteLine((totalPrice + 1) + " lira");
+
+//    }
+//}
+
+//catch (Exception)
+//{
+//    Console.WriteLine("Lütfen adet girerken sayı kullanınız.w");
+//} 
+#endregion
+
+
+
+
+
+
+
 
 
 
